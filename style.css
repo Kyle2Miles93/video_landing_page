@@ -69,7 +69,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.8;
 }
 
 .overlay {
@@ -114,4 +113,21 @@
     background: #fff;
     padding: 10px 30px;
     text-decoration: none;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+
+.text a:hover {
+    letter-spacing: 6px;
+}
+
+.social {
+    position: absolute;
+    bottom: 20px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
