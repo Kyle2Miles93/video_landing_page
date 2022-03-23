@@ -16,6 +16,7 @@
       <video src="video.mp4" muted loop autoplay></video>
 
       <div class="overlay"></div>
+      
       <div class="text">
         <h2>Feel Free to</h2>
         <h3>Explore the World</h3>
@@ -36,19 +37,30 @@
           <a href="#"><img src="twitter.png" alt="twitter.com"/></a>
         </li>
         <li>
-          <a href="#"></a><img src="instagram.png" alt="instagram.com"/></a>
+          <a href="#"><img src="instagram.png" alt="instagram.com"/></a>
         </li>
       </ul>
     </section>
 
     <div class="menu">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="https://medium.com/@milezisbass93/led-simulacra-musings-about-ecology-big-tech-and-opposable-thumbs-6e2e8aedd523">Blog</a></li>
-            <li><a href="https://www.linkedin.com/in/miles-tsue/">Contact</a></li>
-            <li><a href="https://www.youtube.com/watch?v=2WHx2ITKtUg">Destination (example: Bali)</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="https://medium.com/@milezisbass93/led-simulacra-musings-about-ecology-big-tech-and-opposable-thumbs-6e2e8aedd523">Blog</a></li>
+          <li><a href="https://www.linkedin.com/in/miles-tsue/">Contact</a></li>
+          <li><a href="https://www.youtube.com/watch?v=2WHx2ITKtUg">Destination: Bali</a></li>
         </ul>
     </div>
+
+    <script>
+      const menuToggle = document.querySelector('.toggle')
+      const showcase = document.querySelector('.showcase')
+      
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active')
+        showcase.classList.toggle('active')
+      })
+    </script>
+
 </body>
 </html>
